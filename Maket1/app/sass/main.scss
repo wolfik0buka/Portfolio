@@ -79,11 +79,120 @@ body {
     }
 
 }
+
+.about-us{
+    padding: 105px 0 0;
+    .our-description{
+        .description{
+            margin:50px 0;
+            max-width: 95%;
+            color: black;
+        }
+    }
+    .our-services{
+        .service{
+            .service-icon{
+                margin: 0 0 30px;
+                .icon{
+                    font-family: icons;
+                    color: $accent;
+                    font-size: 2.25em;
+                    font-style: normal;
+                }
+            }
+            .service-description{
+               margin: 20px 0 50px;
+            }
+        }
+    }
+    .decorative-line{
+        margin-top: 50px;
+        height: 2px;
+        background-color: #ECECEC;
+    }
+}
+.feature-products{
+    padding: 95px 0 120px;
+    text-align: center;
+    .description{
+        max-width: 500px;
+        margin: 30px auto;
+    }
+    .products-menu{
+        text-align: center;
+        list-style-type: none;
+        padding: 0;
+        margin: 80px 0 60px;
+        .menu-item{
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 1.375em;
+            font-weight: 500;
+            margin: 0 10px;
+            padding: 5px;
+            &:hover{
+                color: black;
+                cursor: pointer;
+            }
+        }
+    }
+    .images{
+        .rectangle-wraper{
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            padding-bottom: 100%;
+            margin-bottom: 20px;
+            .content{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                img{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: all 1s ease;
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+    }
+}
+.our-team{
+    .description{
+        max-width: 470px;
+        margin: 26px 0 30px;
+    }
+}
 .h1{
     font-size: 3.75em;
     text-transform: uppercase;
-    line-height: 1.1em;
+    line-height: 1.2em;
     font-weight: 700;
+}
+
+.h2{
+    text-transform: uppercase;
+    font-size: 2.625em;
+    line-height: 1.3em;
+    font-weight: bold;
+}
+
+.h4{
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.underline{
+    display: inline-block;
+    width: 130px;
+    height: 2px;
+    background-color: $accent;
+    margin: auto;
 }
 .button{
     display: inline-block;
