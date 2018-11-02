@@ -7,28 +7,44 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Agency Landing Page</title>
     <link rel="stylesheet" href="./css/main.css">
+    <script src="js/scripts.min.js"></script>
 </head>
+
 <body>
-    <header class="header">
+    <nav id="my-menu">
+        <ul class="menu-list">
+            <li class="menu-item"><a href="#home">Home</a></li>
+            <li class="menu-item"><a href="#portfolio">Portfolio</a></li>
+            <li class="menu-item"><a href="#about-us">About Us</a></li>
+            <li class="menu-item"><a href="#contacts">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="mmpage">
+    <header class="header" id="home">
         <div class="container">
             <div class="wide-menu col">
                 <ul class="menu-list">
-                    <li class="menu-item"><a href="">Home</a></li>
-                    <li class="menu-item"><a href="">Portfolio</a></li>
-                    <li class="menu-item"><a href="">About Us</a></li>
-                    <li class="menu-item"><a href="">Contact</a></li>
+                    <li class="menu-item"><a href="#home">Home</a></li>
+                    <li class="menu-item"><a href="#portfolio">Portfolio</a></li>
+                    <li class="menu-item"><a href="#about-us">About Us</a></li>
+                    <li class="menu-item"><a href="#contacts">Contact</a></li>
                 </ul>
             </div>
+            <a href="#my-menu" class="hamburger hamburger--spin mmenu-button">
+                <span class="hamburger-box">
+                     <span class="hamburger-inner"></span>
+                </span>
+            </a>
             <div class="row">
-                <div class="col-md-6 greeting">
+                <div class="col-lg-6 col-md-8 greeting">
                     <h1 class="h1">our strong organaisation</h1>
                     <p class="greet-descripption">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do
                         eiusmod tempor incididunt  ut labore et. ectetur adig ipis cing elit, sed do eiusmod tempor
                         incididunt.
                     </p>
-                    <a href="" class="button">Contact Us</a>
+                    <a href="#contacts" class="button">Contact Us</a>
                 </div>
-                <div class="video-header col-md-6 align-self-center">
+                <div class="video-header col-lg-6 align-self-center">
                     <div class="video-block">
                         <video class="video" preload="metadata" poster="video/poster.JPG">
                             <source src="video/greetVideo.mp4" type="video/mp4'">
@@ -50,17 +66,17 @@
     </header>
     <main>
         <div class="container">
-            <section class="about-us row">
-                <div class="our-description col-md-6">
+            <section class="about-us row" id="about-us">
+                <div class="our-description col-lg-6 col-md-10">
                     <h2 class="h2">do you know we can provide for you ?</h2>
                     <p class="description">
                         Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut
                         labore et.Lorem ni ipsum dolor sit amet, consectetur adipis cing elit, ed doi eiusmod tempor
                         incididunt ut labore et.
                     </p>
-                    <a href="" class="button">Learn More</a>
+                    <a href="#portfolio" class="button">Learn More</a>
                 </div>
-                <div class="our-services col-md-6">
+                <div class="our-services col-lg-6 col-md-10" >
                     <div class="row">
                         <div class="col-md-6 service">
                             <div class="service-icon"><i class="icon">&#xe808;</i></div>
@@ -94,9 +110,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="decorative-line col"></div>
+                <div class="decorative-line col-12"></div>
             </section>
-            <section class="feature-products">
+            <section class="feature-products" id="portfolio">
                 <h2 class="h2">FEATURE PRODUCTS</h2>
                 <p class="description">Lorem ipsum dolor sit amet, consectetur adipis cing elit,sed do eiusmod tempor incididunt ut labore et.</p>
                 <div class="underline"></div>
@@ -110,56 +126,56 @@
                     </ul>
                 </nav>
                 <div class="images row justify-content-center ">
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6">
                         <div class="rectangle-wraper">
                             <div class="content">
                                 <img src="images/UI1.jpg" alt="user interface 1">
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6">
                         <div class="rectangle-wraper">
                             <div class="content">
                                 <img src="images/WT1.jpg" alt="user interface 1">
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6">
                         <div class="rectangle-wraper">
                             <div class="content">
                                 <img src="images/PT1.jpg" alt="user interface 1">
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6">
                         <div class="rectangle-wraper">
                             <div class="content">
                                 <img src="images/MU1.jpg" alt="user interface 1">
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6">
                         <div class="rectangle-wraper">
                             <div class="content">
                                 <img src="images/UI2.jpg" alt="user interface 1">
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6">
                         <div class="rectangle-wraper">
                             <div class="content">
                                 <img src="images/MU3.jpg" alt="user interface 1">
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6">
                         <div class="rectangle-wraper">
                             <div class="content">
                                 <img src="images/WT2.jpg" alt="user interface 1">
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6">
                         <div class="rectangle-wraper">
                             <div class="content">
                                 <img src="images/PT3.jpg" alt="user interface 1">
@@ -184,17 +200,17 @@
                             <p class="resume">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing
                                 eiusmod tempor incididut labore Ui / Ux , print template.</p>
                             <div class="contact-list">
-                                <a href="">facebook</a>
-                                <a href="">Dribble</a>
-                                <a href="">Behance</a>
-                                <a href="">Twitter</a>
+                                <a href="https://www.facebook.com/" target="_blank">facebook</a>
+                                <a href="http://dribble.com/" target="_blank">Dribble</a>
+                                <a href="https://www.behance.net/" target="_blank">Behance</a>
+                                <a href="https://twitter.com/" target="_blank">Twitter</a>
                             </div>
                         </div>
                         <div class="other">
                             <div class="human">
                                 <div class="rectangle-wraper">
                                     <div class="content">
-                                       <img src="images/team/brooke-cagle.jpg" alt="user interface 1">
+                                       <img src="images/team/brooke-cagle.jpg" alt="Sokina Jue">
                                         <span class="name">Sokina Jue</span>
                                     </div>
                                 </div>
@@ -202,7 +218,7 @@
                             <div class="human">
                                 <div class="rectangle-wraper">
                                     <div class="content">
-                                        <img src="images/team/brooke-cagle.jpg" alt="user interface 1">
+                                        <img src="images/team/brooke-cagle.jpg" alt="Sokina Jue">
                                         <span class="name">Sokina Jue</span>
                                     </div>
                                 </div>
@@ -210,7 +226,7 @@
                             <div class="human">
                                 <div class="rectangle-wraper">
                                     <div class="content">
-                                        <img src="images/team/brooke-cagle.jpg" alt="user interface 1">
+                                        <img src="images/team/brooke-cagle.jpg" alt="Sokina Jue">
                                         <span class="name">Sokina Jue</span>
                                     </div>
                                 </div>
@@ -218,7 +234,7 @@
                             <div class="human">
                                 <div class="rectangle-wraper">
                                     <div class="content">
-                                        <img src="images/team/brooke-cagle.jpg" alt="user interface 1">
+                                        <img src="images/team/brooke-cagle.jpg" alt="Sokina Jue">
                                         <span class="name">Sokina Jue</span>
                                     </div>
                                 </div>
@@ -237,7 +253,7 @@
                 <input type="submit" value="SUBSCRIBE" class="button">
             </form>
         </section>
-        <section class="contacts container">
+        <section class="contacts container" id="contacts">
             <div class="row">
                 <div class="col-md-7">
                     <h2 class="h2">get in touch</h2>
@@ -248,13 +264,13 @@
                 </div>
             </div>
             <div class="row feedback-contacts justify-content-between">
-                <form action="#" class="col-md-7 feedback-form" >
+                <form action="#" class="col-lg-7 feedback-form" >
                     <input type="text" class="name-feedback" name="Name" placeholder="Name">
                     <input type="email" class="emai-feedback" name="Email" placeholder="Your Mail">
                     <textarea name="message" class="text-feedback" placeholder="Type your message"></textarea>
                     <input type="submit" value="SEND MESSAGe" class="button">
                 </form>
-                <div class="contacts ">
+                <div class="contacts col-lg-4 col-sm-8">
                         <h5 class="h5">contact info</h5>
                         <p class="address">Jalalabad 24 / A, Ambaarkhana, Sylhet,
                             Bangladesh</p>
@@ -267,20 +283,20 @@
     <footer class="page-footer">
         <div class="container">
             <div class="row">
-                <div class="copyright col-md-6">
+                <div class="copyright col-md-7">
                     <p>© Copyright @Junaed 2016, All rights reserved.</p>
                 </div>
-                <div class="col-md-6 social-links">
+                <div class="col-md-5 social-links">
                     <ul>
-                        <li class="item"><a href=""><i class="fa fa-twitter"></i></a></li>
-                        <li class="item"><a href=""><i class="fa fa-linkedin"></i></a></li>
-                        <li class="item"><a href=""><i class="fa fa-google-plus" ></i></a></li>
-                        <li class="item"><a href=""><i class=" fa fa-facebook"></i></a></li>
+                        <li class="item"><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                        <li class="item"><a href="https://www.linkedin.cn"><i class="fa fa-linkedin"></i></a></li>
+                        <li class="item"><a href="https://plus.google.com/"><i class="fa fa-google-plus" ></i></a></li>
+                        <li class="item"><a href="https://www.facebook.com/"><i class=" fa fa-facebook"></i></a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
-
+    </div>
 </body>
 </html>

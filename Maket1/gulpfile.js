@@ -1,7 +1,11 @@
 var gulp = require('gulp'),
 	sass = require('gulp-sass'),
 	browserSync = require('browser-sync'),
-	autiprefixer = require('gulp-autoprefixer');
+	autiprefixer = require('gulp-autoprefixer'),
+    uglify = require('gulp-uglify'),
+    concat = require('gulp-concat');
+    
+
 
 gulp.task('sass', function () {
 	return gulp.src('app/sass/**/*scss')
@@ -20,9 +24,21 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
     });
 });
 
+gulp.task('js', function() {
+    return gulp.src([
+        'node_modules/jquery/dist/jquery.min.js',
+        'node_modules/jquery.mmenu/dist/jquery.mmenu.all.js',
+        'app/js/common.js', // Always at the end
+    ])
+        .pipe(concat('scripts.min.js'))
+        // .pipe(uglify()) // Mifify js (opt.)
+        .pipe(gulp.dest('app/js'))
+        .pipe(browserSync.reload({ stream: true }))
+});
+
 gulp.task('watch',['browser-sync'], function(){
 	gulp.watch('app/sass/**/*', ['sass']);
 	gulp.watch('app/*.html', browserSync.reload);
-	gulp.watch('app/js/*.js', browserSync.reload);
+	gulp.watch('app/js/*.js', ['js']);
 });
 gulp.task('default', ['watch']);
