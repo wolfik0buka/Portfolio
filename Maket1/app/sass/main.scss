@@ -139,6 +139,9 @@ body {
                 cursor: pointer;
             }
         }
+        .active-category{
+            color: $accent;
+        }
     }
     .images{
         .rectangle-wraper{

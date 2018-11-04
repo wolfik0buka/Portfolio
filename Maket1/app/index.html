@@ -46,16 +46,16 @@
                 </div>
                 <div class="video-header col-lg-6 align-self-center">
                     <div class="video-block">
-                        <video class="video" preload="metadata" poster="video/poster.JPG">
-                            <source src="video/greetVideo.mp4" type="video/mp4'">
+                        <video class="video" preload="metadata" poster="video/poster.JPG" id="header-video">
+                            <source src="video/greetVideo.mp4" type="video/mp4">
                             <source src="video/greetVideo.ogv" type="video/ogg">
                             <source src="video/greetVideo.webm" type="video/webm">
                             <!-- Chrom и  firefox воспроизводят все видео, IE11 только mp4-->
                             Video is not supported
                         </video>
-                        <div class="video-preview">
+                        <div class="video-preview" id="video-header-preview">
                             <div class="control">
-                                <img src="images/icons/Vedio%20Icon.png" alt="Play">
+                                <img src="images/icons/Vedio%20Icon.png" alt="Play" id="video-play-buttom">
                             </div>
                         </div>
                     </div>
@@ -119,14 +119,14 @@
                 <div class="underline"></div>
                 <nav>
                     <ul class="products-menu">
-                        <li class="menu-item">all</li>
+                        <li class="menu-item active-category">all</li>
                         <li class="menu-item">print template</li>
                         <li class="menu-item">web template</li>
                         <li class="menu-item">user interface</li>
                         <li class="menu-item">mock-up</li>
                     </ul>
                 </nav>
-                <div class="images row justify-content-center ">
+                <div class="images row justify-content-center " id="feature-products-images">
                     <div class="col-md-3 col-sm-6">
                         <div class="rectangle-wraper">
                             <div class="content">
@@ -191,59 +191,7 @@
                     tempor incididut labore Ui / Ux , print template.
                 </p>
                 <div class="underline"></div>
-                <div class="present-team">
-                    <div class="active-foto">
-                        <img src="images/team/jay-lee.jpg" alt="jay-lee">
-                    </div>
-                    <div class="wrapper">
-                        <div class="profile">
-                            <h3 class="h3">mark waugh</h3>
-                            <p class="resume">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing
-                                eiusmod tempor incididut labore Ui / Ux , print template.</p>
-                            <div class="contact-list">
-                                <a href="https://www.facebook.com/" target="_blank">facebook</a>
-                                <a href="http://dribble.com/" target="_blank">Dribble</a>
-                                <a href="https://www.behance.net/" target="_blank">Behance</a>
-                                <a href="https://twitter.com/" target="_blank">Twitter</a>
-                            </div>
-                        </div>
-                        <div class="other">
-                            <div class="human">
-                                <div class="rectangle-wraper">
-                                    <div class="content">
-                                        <img src="images/team/brooke-cagle.jpg" alt="Sokina Jue">
-                                        <span class="name">Sokina Jue</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="human">
-                                <div class="rectangle-wraper">
-                                    <div class="content">
-                                        <img src="images/team/brooke-cagle.jpg" alt="Sokina Jue">
-                                        <span class="name">Sokina Jue</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="human">
-                                <div class="rectangle-wraper">
-                                    <div class="content">
-                                        <img src="images/team/brooke-cagle.jpg" alt="Sokina Jue">
-                                        <span class="name">Sokina Jue</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="human">
-                                <div class="rectangle-wraper">
-                                    <div class="content">
-                                        <img src="images/team/brooke-cagle.jpg" alt="Sokina Jue">
-                                        <span class="name">Sokina Jue</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+                <div id="present-team" class="present-team"></div>
             </section>
         </div>
         <section class="subscribe">
