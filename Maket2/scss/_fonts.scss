@@ -1,0 +1,7 @@
+@import "mixin/font-face";
+
+@include font-face("valeraround", "../fonts/valeraround/varelaround-regular");
+@include font-face("lato", "../fonts/lato/lato-regular",400);
+@include font-face("lato", "../fonts/lato/lato-light",300);
+@include font-face("lato", "../fonts/lato/lato-bold",700);
+

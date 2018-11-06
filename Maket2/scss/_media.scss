@@ -1,0 +1,148 @@
+@import "vars";
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥992px
+@include media-breakpoint-down(md) {
+    .header{
+        padding: 30px 0 30px;
+        .container .row{
+            justify-content: center;
+            .video-header{
+                text-align: center;
+            }
+        }
+    }
+    .about-us{
+        padding: 105px 0 0;
+        justify-content: center;
+        .our-services{
+            margin-top: 40px;
+        }
+    }
+    .feature-products{
+        .products-menu{
+            .menu-item{
+                font-size: 1.1em;
+            }
+        }
+    }
+    .our-team{
+        .present-team{
+            flex-direction: column;
+            align-items: center;
+            .active-foto{
+                text-align: center;
+            }
+            .wrapper{
+                .profile{
+                    text-align: center;
+                    .resume{
+                        margin: 35px auto 40px;
+                    }
+                }
+            }
+        }
+    }
+    .contacts{
+        .feedback-contacts{
+            .contacts{
+                margin-top: 40px;
+                margin-left: auto;
+            }
+        }
+    }
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+    .header{
+        .container{
+            .mmenu-button{
+                display: inline-block;
+            }
+            .wide-menu{
+                display: none;
+            }
+        }
+
+    }
+    .page-footer{
+        .copyright, .social-links {
+            text-align: center;
+        }
+    }
+    .our-team{
+        .present-team{
+            .wrapper{
+                .other{
+                    .human{
+                        text-align: center;
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    }
+    #my-menu{
+        .mm-menu a{
+            &:hover{
+                color: $accent;
+            }
+        }
+    }
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+    body{
+        overflow-x: auto;
+    }
+    .h1{
+        font-size: 2em;
+    }
+    .h2{
+        font-size: 1.9em;
+    }
+    .our-team{
+        .present-team{
+            .wrapper{
+                .other{
+                    justify-content: center;
+                }
+            }
+        }
+    }
+    .subscribe{
+        .subscribe-email{
+            width:90%;
+            margin: 0 auto 20px;
+        }
+    }
+    .contacts{
+        .feedback-contacts{
+            .feedback-form{
+                text-align: center;
+                .name-feedback,.emai-feedback{
+                    float: none;
+                    width: 90%;
+                    margin-bottom: 25px;
+                }
+                .text-feedback{
+                    margin-top: 25px;
+                    width: 95%;
+                }
+                .button{
+                    text-transform: uppercase;
+                    width: 100%;
+                }
+            }
+            .contacts{
+                &:after{
+                    display: none;
+                }
+            }
+        }
+    }
+}
