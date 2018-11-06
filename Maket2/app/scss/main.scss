@@ -1,0 +1,11 @@
+@import "fonts";
+@import "libs";
+@import "vars";
+
+body{
+    font-family: $default-font;
+    color: $font-color;
+    font-size: 20px;
+}
+
+@import "media";
