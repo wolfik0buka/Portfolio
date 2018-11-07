@@ -6,6 +6,126 @@ body{
     font-family: $default-font;
     color: $font-color;
     font-size: 20px;
+
+}
+
+.page-header{
+    height: 100vh;
+    overflow-y: hidden;
+    background-image: url("../images/banner_background.jpg");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    background-color: $decorative;
+    .greating{
+        text-align: center;
+        margin-top: 200px;
+        margin-bottom: 56px;
+        .description{
+            margin: 40px 0 60px;
+        }
+        .run-video{
+            color: $header-color;
+            background-color: transparent;
+            padding: 18px 48px 18px 42px;
+            border: rgba($header-color, 0.1) 1px solid;
+            border-radius: 26px;
+            margin-bottom: 55px;
+            transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+            .fa-play{
+                margin-right: 15px;
+                font-size: 12px;
+            }
+            &:hover{
+                background-color: $decorative;
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+    .header-iphone{
+        img{
+            display: block;
+            width: 100%;
+        }
+    }
+}
+.main-navigation{
+    padding: 30px 0;
+    .show-menu-button{
+        position: absolute;
+        color: $header-color;
+        z-index: 2;
+        &:hover{
+            color: $hover-menu;
+        }
+    }
+    .menu{
+        display: inline-block;
+        padding: 0;
+        list-style-type: none;
+        .menu-item{
+            display: inline-block;
+            a{
+                display: block;
+                font-family: 'lato', sans-serif;
+                font-size: 16px;
+                color: $header-color;
+                &:hover{
+                    color: $hover-menu;
+                }
+            }
+        }
+    }
+    .left-menu{
+        .menu-item{
+            margin-left: 40px;
+            &:first-child{
+                margin-left: 50px;
+            }
+        }
+    }
+    .logo{
+        text-align: center;
+    }
+    .right-menu{
+        text-align: right;
+        .get-app{
+            &:hover{
+                color: $hover-menu;
+                text-decoration: none;
+            }
+            .fa-apple{
+                margin-right: 15px;
+                font-size: 20px;
+            }
+        }
+        .menu-item{
+            margin-right: 30px;
+        }
+    }
+}
+
+.h1, .h2{
+    font-family: valeraround,sans-serif;
+    color: $header-color;
+    font-weight: 400;
+}
+
+.h1{
+    font-size: 2.652em;
+}
+
+.button{
+    padding: 13px;
+    border-radius: 21px;
+    font-family: "lato", sans-serif;
+    color: white;
+    background-color: $decorative;
+    font-weight: 400;
+    font-size: 16px;
+
 }
 
 @import "media";
