@@ -5668,4 +5668,18 @@
 $(document).ready(function () {
   console.log('loaded');
 });
+var wow = new WOW({
+  offset: 0,
+  mobile: false,
+  live: false,
+  boxClass: 'wow',
+  animateClass: 'animated'
+});
+wow.init();
+
+window.onscroll = function () {
+  var navPanel = document.getElementById('main-navigation');
+  var scroll = window.pageYOffset || document.documentElement.scrollTop;
+  scroll > 50 ? navPanel.classList.add('fixed') : navPanel.classList.remove('fixed');
+};
 //# sourceMappingURL=all.js.map

@@ -14,12 +14,13 @@ gulp.task('browser-sync', function(){
 		server:{
 			baseDir: 'app'
 		},
-		noify: false,
+		notify: false,
 	});
 });
 
 gulp.task('styles', function(){
-	return gulp.src('app/scss/**/*scss')
+	return gulp.src(['node_modules/wowjs/css/libs/animate.css',
+		'app/scss/**/*scss'])
 	.pipe(sass({ outputStyle: 'expanded' }))
 	.pipe(rename({suffix: '.min', prefix : '' }))
 	.pipe(autoprefixer(['cover 99%']))
