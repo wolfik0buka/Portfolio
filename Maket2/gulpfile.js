@@ -34,6 +34,7 @@ gulp.task("javaScript", function () {
       'node_modules/jquery/dist/jquery.min.js',
       'node_modules/bootstrap/dist/js/bootstrap.min.js',
       'node_modules/wowjs/dist/wow.min.js',
+      'app/libs/OwlCarousel2/owl.carousel.min.js',
       'app/js/*.js'])
       .pipe(sourcemaps.init())
       .pipe(babel())
