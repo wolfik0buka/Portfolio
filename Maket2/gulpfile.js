@@ -33,6 +33,7 @@ gulp.task("javaScript", function () {
   return gulp.src([
       'node_modules/jquery/dist/jquery.min.js',
       'node_modules/bootstrap/dist/js/bootstrap.min.js',
+	  'node_modules/bootstrap/js/dist/util.js',
       'node_modules/wowjs/dist/wow.min.js',
       'app/libs/OwlCarousel2/owl.carousel.min.js',
       'app/js/*.js'])

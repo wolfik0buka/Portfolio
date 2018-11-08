@@ -8,6 +8,10 @@ $(document).ready(()=>{
         margin: 40,
         onTranslated: iphoneChanged,
     });
+    $('#quotes-carousel').on('slide.bs.carousel', (event)=>{
+        document.querySelector('.carousel-indicator .active').classList.remove('active');
+        document.querySelector('.carousel-indicator').children.item(+event.to).classList.add('active');
+    });
 });
 
 

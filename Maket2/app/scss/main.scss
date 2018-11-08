@@ -323,6 +323,66 @@ body{
 
     }
 }
+
+.orders{
+    padding: 130px 0;
+    .prev-quote, .next-quote{
+        a{
+            font-size: 42px;
+            color: rgba(38,41,44,0.2);
+        }
+    }
+    .next-quote{
+        text-align: right;
+    }
+    .carousel-indicator{
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        li{
+            display: inline-block;
+            img{
+                width: 90px;
+                height: 90px;
+                border-radius: 50%;
+                opacity: 0.3;
+            }
+        }
+        .active{
+            img{
+                width: 130px;
+                height: 130px;
+                opacity: 1;
+            }
+
+        }
+    }
+    .quotes{
+        margin: 75px 0 0;
+        text-align: center;
+        p{
+            margin:48px 0 30px;
+        }
+        .stars{
+            color: #f2bc3b;
+            font-size: 23px;
+            .fa-star{
+                margin: 0 4px;
+            }
+        }
+        .author{
+            margin: 68px 0 0;
+            color: $header-color;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+
+}
 .h1, .h2{
     font-family: valeraround,sans-serif;
     color: $header-color;
