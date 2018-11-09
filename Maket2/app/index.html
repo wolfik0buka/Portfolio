@@ -36,7 +36,25 @@
                     </div>
                 </div>
             </div>
-
+            <div class="side-menu">
+                <div class="logo"><img src="images/logo-white.png" alt="New Providence"></div>
+                <ul class="side-menu-links">
+                    <li class="side-item"><a href="#">Tour</a></li>
+                    <li class="side-item"><a href="#">Features</a></li>
+                    <li class="side-item"><a href="#">Pricing</a></li>
+                    <li class="side-item"><a href="#">Help</a></li>
+                    <li class="side-item"><a href="#">Contacts</a></li>
+                </ul>
+                <a href="" class="button get-app"><i class="fab fa-apple"></i>Get App</a>
+                <div class="social-links">
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-google-plus-g"></i></a>
+                    <a href=""><i class="fab fa-tumblr"></i></a>
+                    <a href=""><i class="fab fa-pinterest-p"></i></a>
+                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
         </nav>
         <div class="landing container">
             <div class="row justify-content-center">
@@ -109,7 +127,7 @@
         </section>
         <section class="map-feature">
             <div class="wraper">
-                <div class="container">
+                <div class="container wow fadeInRight">
                     <div class="content col-md-5">
                         <h2 class="h2">We are almost everywhere</h2>
                         <p class="map-text">
@@ -128,7 +146,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="map wow fadeInRight" data-wow-offset="10">
+                <div class="map" data-wow-offset="10">
                     <img src="images/map.png" alt="World map">
                 </div>
             </div>
@@ -139,13 +157,13 @@
             <div class="description" id="interface-description">
                 Landing Screen
             </div>
-            <div class="interface-carousel wow fadeInUp" data-wow-offset="10">
+            <div class="interface-carousel" data-wow-offset="10">
                 <div class="owl-carousel">
-                    <div class="carousel-item" data-description="Landingscreen"><img src="images/interface/img-1.png" alt="Get started" ></div>
-                    <div class="carousel-item" data-description="Main"><img src="images/interface/img-2.png" alt="Main"></div>
-                    <div class="carousel-item" data-description="Events"><img src="images/interface/img-3.png" alt="Events"></div>
-                    <div class="carousel-item" data-description="Audio Recorder"><img src="images/interface/img-4.png" alt="Audio Recorder"></div>
-                    <div class="carousel-item" data-description="Registration"><img src="images/interface/img-5.png" alt="Registration"></div>
+                    <div class="interface-item" data-description="Landingscreen"><img src="images/interface/img-1.png" alt="Get started" ></div>
+                    <div class="interface-item" data-description="Main"><img src="images/interface/img-2.png" alt="Main"></div>
+                    <div class="interface-item" data-description="Events"><img src="images/interface/img-3.png" alt="Events"></div>
+                    <div class="interface-item" data-description="Audio Recorder"><img src="images/interface/img-4.png" alt="Audio Recorder"></div>
+                    <div class="interface-item" data-description="Registration"><img src="images/interface/img-5.png" alt="Registration"></div>
                 </div>
             </div>
         </section>
@@ -222,49 +240,107 @@
                 </div>
             </div>
         </section>
-        <section class="container plan-choise">
-            <div class="row">
-                <div class="col-md-4 options">
-                    <h2 class="h2">Choose your perfect plan</h2>
-                    <p class="personalitu"></p>
-                    <div class="toogle-options">
-                        <span class="option">Individual</span>
-                        <span class="option">Company</span>
+        <section class="plan-choise">
+            <div class="container">
+                <div class="row position">
+                    <div class="col-md-4 options">
+                        <h2 class="h2">Choose your perfect plan</h2>
+                        <p class="personality">you are</p>
+                        <div class="toogle-options">
+                            <span class="option o-active">Individual</span>
+                            <span class="option" >Company</span>
+                        </div>
+                        <p class="description">Thus much I thought proper to tell you in relation to yourself,
+                            and to the trust I reposed in you.
+                        </p>
+                        <p class="need-more">Have a bigger team? <a href="#">Let‘s talk</a></p>
                     </div>
-                    <p class="descriptiom">Thus much I thought proper to tell you in relation to yourself,
-                        and to the trust I reposed in you.
-                    </p>
-                    <p class="need-more">Have a bigger team?<a href="#">Let‘s talk</a></p>
-                </div>
-                <div class="col-md-6 offers">
-                    <div class="offer">
-                        <h3 class="h3">Starter</h3>
-                        <span class="price">Free</span>
-                        <p class="about">Build your schedule every day</p>
-                        <ul>
-                            <li>Unlimeted events</li>
-                            <li>Connect Dropbox & Evernote</li>
-                        </ul>
-                        <a href="#" class="button get-offer">Get started</a>
-                    </div>
-                    <div class="offer">
-                        <h3 class="h3">Pro</h3>
-                        <span class="price">$4.99</span>
-                        <p class="about">Make your life better</p>
-                        <ul>
-                            <li>Unlimeted events</li>
-                            <li>Connect Dropbox & Evernote</li>
-                            <li>Personal Assistant</li>
-                        </ul>
-                        <a href="#" class="button get-offer">Make me a Pro</a>
+                    <div class="col-md-7 offers">
+                        <div class="offer main-offer">
+                            <h3 class="h3">Starter</h3>
+                            <span class="price">Free</span>
+                            <p class="about">Build your schedule every day</p>
+                            <ul class="fa-ul">
+                                <li><span class="fa-li" ><i class="fas fa-check"></i></span>Unlimeted events</li>
+                                <li><span class="fa-li" ><i class="fas fa-check"></i></span>Connect Dropbox & Evernote</li>
+                            </ul>
+                            <a href="#" class="button get-offer">Get started</a>
+                        </div>
+                        <div class="offer">
+                            <h3 class="h3">Pro</h3>
+                            <span class="price">$4.99</span>
+                            <p class="about">Make your life better</p>
+                            <ul class="fa-ul">
+                                <li><span class="fa-li" ><i class="fas fa-check"></i></span>Unlimeted events</li>
+                                <li><span class="fa-li" ><i class="fas fa-check"></i></span>Connect Dropbox & Evernote</li>
+                                <li><span class="fa-li" ><i class="fas fa-check"></i></span>Personal Assistant</li>
+                            </ul>
+                            <a href="#" class="button get-offer">Make me a Pro</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad hic suscipit tempora? Dolores in maxime quo. A aperiam architecto aut consequatur deserunt dignissimos doloribus eaque, ex, exercitationem hic labore maxime minus neque numquam obcaecati quis rem! Aut distinctio dolorem doloribus exercitationem laboriosam natus quae quos repellat. Aliquam, delectus deleniti earum expedita iure maxime non odio quasi quod reprehenderit? Asperiores, at distinctio dolorum fugiat iusto natus nesciunt quaerat quasi rem temporibus velit voluptatem. Excepturi impedit ipsum iure laborum nam nesciunt, omnis pariatur ut? Accusantium cupiditate et officiis quibusdam. Accusamus accusantium, alias aliquam amet animi assumenda commodi delectus deleniti dolorem ea earum eius exercitationem explicabo natus nobis numquam obcaecati placeat provident repellendus sapiente vel voluptatem, voluptatum? Accusamus accusantium architecto aut consectetur consequatur hic natus, nisi nobis nostrum perspiciatis quaerat ratione rerum tempore? Mollitia, nobis veniam! Adipisci architecto consequatur deserunt distinctio ea eius enim ex fuga fugit id illum iste laboriosam modi necessitatibus nemo numquam officia pariatur reiciendis rem repellendus saepe sequi tempore totam veritatis, vitae voluptatibus voluptatum. Ab accusantium aliquid aperiam consectetur delectus eaque est eveniet exercitationem explicabo fuga itaque maxime molestiae, natus neque, quos rem repellendus repudiandae soluta totam velit! Atque eum explicabo necessitatibus nemo nesciunt nisi nobis porro quo rem sed! Adipisci consequuntur cupiditate laboriosam molestias quidem sit voluptates. A alias aliquid asperiores consectetur corporis dicta dolor ea error esse et facere fuga id illo impedit ipsa iure labore laborum magni, minima mollitia necessitatibus nisi odit officiis quae quasi quibusdam quidem rerum sint suscipit temporibus unde, ut vero voluptatibus? Commodi consequatur corporis cupiditate eos exercitationem molestias, nam nostrum perspiciatis possimus quia quis quos reprehenderit tempore! Ab aliquid at atque beatae commodi consectetur consequuntur dolor ducimus earum et eveniet ex fuga impedit inventore ipsam ipsum laboriosam magni nobis odit officia perspiciatis quaerat quam quas reiciendis rem, saepe sunt tempore tenetur totam ut. Error exercitationem expedita hic inventore molestias nesciunt nobis nulla omnis quibusdam quidem. Animi beatae, commodi distinctio dolorum enim inventore ipsum laborum laudantium magnam magni modi natus nulla optio pariatur porro quaerat repellendus saepe tenetur ullam unde ut, velit vitae. Corporis id necessitatibus praesentium. Ab ad atque cum cumque cupiditate deleniti dolore dolores dolorum eaque eius error esse et fuga hic labore laboriosam maiores minima minus molestiae odio placeat, quibusdam reprehenderit sed sit tenetur voluptas voluptatibus! Aliquam atque blanditiis, corporis delectus dignissimos dolores doloribus eius expedita facilis hic inventore ipsa ipsum laborum natus necessitatibus reprehenderit sequi, sit tempora totam velit.
+        <section class="subscribe">
+            <h2 class="h2">Subscribe our newsletters</h2>
+            <form action="#">
+                <input type="email" class="email" placeholder="Your e-mail">
+                <input type="submit" class="submit button" value="Subscibe">
+            </form>
+            <p class="promise">We promise to never spam you.</p>
+        </section>
     </main>
-    <footer class="page-footer">
-
+    <footer class="page-footer container">
+        <div class="decorative-line"></div>
+        <div class="row info">
+            <div class="about-us col-md-3">
+                <div class="logo">
+                    <img src="images/logo.png" alt="New Providence">
+                </div>
+                <p class="about">It was some time before he obtained any answer, and the reply, when made, was
+                    unpropitious.</p>
+                <div class="app-link">
+                    <a href="#" class="link"><img src="images/app-store-download.png" alt="download"></a>
+                </div>
+                <div class="social-links">
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-google-plus-g"></i></a>
+                    <a href=""><i class="fab fa-tumblr"></i></a>
+                    <a href=""><i class="fab fa-pinterest-p"></i></a>
+                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-md-6 links">
+                <div class="link-coloumn">
+                    <h5 class="h5">Learn More</h5>
+                    <ul>
+                        <li><a href="">How it works?</a></li>
+                        <li><a href="">Meeting tools</a></li>
+                        <li><a href="">Live striming</a></li>
+                        <li><a href="">Contat method</a></li>
+                    </ul>
+                </div>
+                <div class="link-coloumn">
+                    <h5 class="h5">About Us</h5>
+                    <ul>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Features</a></li>
+                        <li><a href="">Privacy police</a></li>
+                        <li><a href="">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="link-coloumn">
+                    <h5 class="h5">Support</h5>
+                    <ul>
+                        <li><a href="">F.A.Q.</a></li>
+                        <li><a href="">Contact us</a></li>
+                        <li><a href="">Live chat</a></li>
+                        <li><a href="">Phone call</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
 
 </body>

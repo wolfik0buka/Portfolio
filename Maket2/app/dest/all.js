@@ -6969,6 +6969,8 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 
 $(document).ready(function () {
   console.log('loaded');
+  sameHeights();
+  setListeners();
   $(".owl-carousel").owlCarousel({
     loop: true,
     center: true,
@@ -6996,9 +6998,33 @@ window.onscroll = function () {
   scroll > 50 ? navPanel.classList.add('fixed') : navPanel.classList.remove('fixed');
 };
 
+function onPersonalityClicked(event) {
+  document.querySelector('.o-active').classList.remove('o-active');
+  event.target.classList.add('o-active');
+}
+
+function setListeners() {
+  var options = document.getElementsByClassName('option');
+  options.item(0).addEventListener('click', onPersonalityClicked);
+  options.item(1).addEventListener('click', onPersonalityClicked);
+}
+
 function iphoneChanged() {
   var activeSlide = document.getElementsByClassName('owl-item center');
   var description = document.getElementById('interface-description');
   description.innerText = activeSlide.item(0).children.item(0).dataset.description;
+}
+
+function sameHeights() {
+  var offers = document.getElementsByClassName('offer');
+  var offer1 = offers.item(0);
+  var offer2 = offers.item(1);
+  var elements = offer1.children.length;
+
+  for (var i = 0; i < elements; i++) {
+    var maxHeight = offer1.children.item(i).clientHeight < offer2.children.item(i).clientHeight ? offer2.children.item(i).clientHeight : offer1.children.item(i).clientHeight;
+    offer2.children.item(i).style.height = "".concat(maxHeight, "px");
+    offer1.children.item(i).style.height = "".concat(maxHeight, "px");
+  }
 }
 //# sourceMappingURL=all.js.map
