@@ -2,16 +2,203 @@
 
 
 /*==========  Desktop First  ==========*/
-
+@include media-breakpoint-down(lg){
+    .get-app{
+        .invite{
+            width: 50%;
+        }
+    }
+}
 // ≥992px
 @include media-breakpoint-down(md) {
+    .page-header{
+        .left-menu, .right-menu{
+            display: none;
+        }
+    }
+    .iphone-features{
+        .image{
+            margin: 0 auto 20px;
+        }
+        .content-wraper{
+            position: relative;
+            top: 0;
+            left:0;
+            transform: translate(0);
+            .row{
+                justify-content: center;
+            }
+        }
+    }
+    .plan-choise{
+        .position{
+            justify-content: center;
+        }
+    }
+    .page-footer{
+        .info{
+            justify-content: center;
+            .links{
+                margin-top: 20px;
+                text-align: center;
+                .link-coloumn{
+                    text-align: left;
+                }
+            }
+        }
+    }
 }
 
 // ≥768px
 @include media-breakpoint-down(sm) {
+    .map-feature{
+        .wraper{
+            padding: 10px 0 20px;
+            position: relative;
+            .map{
+                position: static;
+                overflow-x: hidden;
+                width: 90%;
+                margin: 30px auto 0;
+                transform: translateY(0);
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .get-app{
+        .invite{
+            width: 80%;
+        }
+    }
+    .page-footer{
+        .info{
+            .links{
+                .link-coloumn{
+                    ul{
+                        margin-right: 30px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 // ≥576px
 @include media-breakpoint-down(xs) {
+    .h1{
+        font-size: 42px;
+    }
+    .h2{
+        font-size: 36px;
+    }
+    .h3{
+        font-size: 28px;
 
+    }
+    body{
+        font-size: 16px;
+    }
+    .iphone-features{
+        .content-wraper{
+            .content{
+                .button{
+                    display: block;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    .map-feature{
+        .wraper{
+            .content{
+
+                .partners{
+                        display: block;
+                        margin-top: 10px;
+                }
+            }
+
+        }
+    }
+    .get-app{
+        .invite{
+            width: 100%;
+            .email{
+                width: 90%;
+                padding-right: 10px;
+            }
+            .submit{
+                position: static;
+                display: block;
+                width: 50%;
+                margin: 20px auto;
+                transform: translateY(0);
+            }
+        }
+    }
+    .orders{
+        .control{
+            justify-content: center;
+        }
+        .prev-quote, .next-quote{
+            a{
+                font-size: 32px;
+            }
+        }
+        .carousel-indicator{
+            margin:0 10px;
+            li{
+                display: inline-block;
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+            .active{
+                img{
+                    width: 48px;
+                    height: 48px;
+                }
+            }
+        }
+    }
+    .subscribe{
+        text-align: center;
+        padding: 85px 0;
+        form{
+            width: 90%;
+            padding-right: 10px;
+            .submit{
+                position: static;
+                width: 50%;
+                transform: translateY(0);
+            }
+        }
+    }
+    .plan-choise{
+        .position{
+            .offers{
+                display: flex;
+                flex-flow: nowrap column;
+                .offer{
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+    .page-footer{
+        .info{
+            .links{
+                .link-coloumn{
+                    display: block;
+                    text-align: center;
+                    ul{
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
 }

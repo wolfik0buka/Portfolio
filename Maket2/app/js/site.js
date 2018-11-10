@@ -3,19 +3,32 @@ $(document).ready(()=>{
     console.log('loaded');
     sameHeights();
     setListeners();
+    document.getElementById('show-back-menu').addEventListener('click', showMenu);
+    document.getElementById('close-menu').addEventListener('click', closeMenu);
     $(".owl-carousel").owlCarousel({
         loop: true,
         center: true,
         items:5,
         margin: 40,
         onTranslated: iphoneChanged,
+        responsive:{
+            320:{
+                items:3
+            },
+            880:{
+                items:5
+            }
+        }
     });
+
     $('#quotes-carousel').on('slide.bs.carousel', (event)=>{
         document.querySelector('.carousel-indicator .active').classList.remove('active');
         document.querySelector('.carousel-indicator').children.item(+event.to).classList.add('active');
     });
+    $('#video-header-modal').on('hidden.bs.modal', function (e) {
+        document.getElementById('header-video').pause();
+    })
 });
-
 
 const wow = new WOW({
     offset: 0,
@@ -34,6 +47,15 @@ window.onscroll = function () {
         navPanel.classList.add('fixed'):
         navPanel.classList.remove('fixed');
 };
+
+function showMenu(event) {
+    document.getElementById('main-side-menu').classList.add('showed');
+    event.preventDefault();
+}
+
+function closeMenu(event) {
+    document.getElementById('main-side-menu').classList.remove('showed');
+}
 
 function onPersonalityClicked(event) {
     document.querySelector('.o-active').classList.remove('o-active');

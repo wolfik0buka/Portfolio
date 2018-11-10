@@ -11,6 +11,7 @@ body{
 
 .page-header{
     height: 100vh;
+    min-height: 720px;
     overflow-y: hidden;
     background-image: url("../images/banner_background.jpg");
     background-size: cover;
@@ -49,6 +50,7 @@ body{
         }
     }
 }
+
 .main-navigation{
     position: absolute;
     width: 100%;
@@ -109,12 +111,14 @@ body{
         }
     }
 }
+
 .fixed{
     z-index: 5;
     background-color: white;
     position: fixed;
     padding: 20px 0;
 }
+
 .features{
     padding: 120px 0 40px;
     .feature{
@@ -135,6 +139,9 @@ body{
         left: 50%;
         top:50%;
         transform: translate(-50%, -50%);
+        .row{
+            justify-content: end;
+        }
         .content{
             .h2{
                 margin-bottom: 70px;
@@ -173,6 +180,7 @@ body{
         }
     }
 }
+
 .map-feature{
     padding: 200px 0;
     .wraper{
@@ -205,6 +213,7 @@ body{
         }
     }
 }
+
 .interface-example{
     padding: 140px 0 120px;
     background-color: #f5f5f8;
@@ -229,8 +238,8 @@ body{
         position: relative;
         .owl-carousel{
             .owl-stage{
-                padding-top: 5%;
-                padding-bottom: 5%;
+                padding-top: 7%;
+                padding-bottom: 6%;
             }
             .interface-item{
                 img{
@@ -255,6 +264,7 @@ body{
         }
     }
 }
+
 .get-app{
     text-align: center;
     padding: 75px 0 130px;
@@ -272,7 +282,7 @@ body{
         margin: 35px 0 40px;
     }
     .invite{
-        width: 30%;
+        width: 550px;
         margin: auto;
         position: relative;
         .email{
@@ -284,6 +294,7 @@ body{
             font-size: 16px;
             line-height: 50px;
             padding-left: 18px;
+            padding-right: 160px;
         }
         .submit{
             position: absolute;
@@ -320,12 +331,14 @@ body{
                 transform: scale(1.1);
             }
         }
-
     }
 }
 
 .orders{
     padding: 130px 0;
+    .control{
+        justify-content: space-between;
+    }
     .prev-quote, .next-quote{
         a{
             font-size: 42px;
@@ -357,7 +370,6 @@ body{
                 height: 130px;
                 opacity: 1;
             }
-
         }
     }
     .quotes{
@@ -381,7 +393,6 @@ body{
             text-transform: uppercase;
         }
     }
-
 }
 
 .plan-choise{
@@ -442,7 +453,6 @@ body{
                 border-top-right-radius: 10px;
                 border-bottom-right-radius: 10px;
                 align-self: center;
-
                 .price{
                     margin: 30px 55px;
                     display: inline-block;
@@ -459,11 +469,11 @@ body{
                     width: 55%;
                     margin: auto;
                     margin-bottom: 45px;
-
-
                 }
                 .fa-ul{
                     margin-bottom: 50px;
+                    padding: 0;
+                    margin-left: 10px;
                     li{
                         display: inline-block;
                         color: $header-color;
@@ -501,11 +511,12 @@ body{
         }
     }
 }
+
 .subscribe{
     text-align: center;
     padding: 85px 0;
     form{
-        width: 30%;
+        width: 550px;
         margin: 50px auto 30px;
         position: relative;
         .email{
@@ -540,8 +551,8 @@ body{
     .promise{
         font-size: 14px;
     }
-
 }
+
 .page-footer{
     padding-bottom: 50px;
     .info{
@@ -603,15 +614,29 @@ body{
         }
     }
 }
+
 .side-menu{
     position: absolute;
-    min-height: 100vh;
+    z-index: 5;
+    min-height: 450px;
+    overflow-y: scroll;
+    height: 100vh;
     background-color: black;
     top:0;
+    left: -400px;
     width: 90%;
     max-width: 400px;
-    transition:all 0.4s ease-in-out;
+    transition:all 0.5s ease-in-out;
     padding: 40px;
+    .close-menu{
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        color: white;
+        &:hover{
+            color: $decorative;
+        }
+    }
     .logo{
         text-align: left;
     }
@@ -628,7 +653,32 @@ body{
             }
         }
     }
+    .social-links{
+        position: absolute;
+        bottom: 40px;
+        margin-top: 60px;
+        a{
+            color: $font-color;
+            margin-right: 20px;
+            &:hover{
+                text-decoration: none;
+                color: $decorative;
+            }
+        }
+    }
 }
+.showed{
+    left: 0;
+}
+
+.modal-body{
+    padding: 0;
+    video{
+        display: block;
+        width: 100%;
+    }
+}
+
 .h1, .h2{
     font-family: valeraround,sans-serif;
     color: $header-color;
@@ -648,7 +698,6 @@ body{
 }
 .h3{
     font-size: 32px;
-
 }
 .h4{
     font-size: 26px;
@@ -671,7 +720,6 @@ body{
     background-color: $decorative;
     font-weight: 400;
     font-size: 16px;
-
 }
 
 @import "media";
