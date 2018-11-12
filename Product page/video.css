@@ -1,0 +1,126 @@
+@font-face {
+    font-family: georgia_1;
+    src: url("videopage/georgia.ttf");
+}
+
+.background {
+    position: fixed;
+    right: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -2;
+}
+
+.feedback{
+    box-sizing: border-box;
+    width: 866px;
+    margin: auto;
+    min-height: 507px;
+    padding: 125px 80px 55px 40px;
+    font-family: georgia_1, serif;
+    font-style: italic;
+    background: url("video/background.png") no-repeat;
+}
+.feedback h4{
+
+    color: #344e78;
+    font-size: 22px;
+    margin: 0;
+    padding-bottom: 4px;
+    border-bottom: #d4d3d1 solid 1px ;
+}
+.adress,
+form{
+    display: inline-block;
+}
+.adress{
+    width: 240px;
+    margin-right: 48px;
+}
+
+.adress h4{
+    padding-left: 13px;
+    margin-bottom: 18px;
+}
+
+.adress p{
+    margin: 6px 0 6px 13px;
+    color: #545455;
+    font-size: 16px;
+
+}
+
+.feedback form{
+    width: 454px;
+    vertical-align: top;
+}
+.feedback form label,
+.feedback form input,
+.feedback form textarea{
+    display: block;
+}
+.feedback form h4{
+    margin-bottom: 18px;
+}
+.feedback form label{
+    color: #545455;
+    font-size: 13px;
+    margin: 9px 0 7px;
+}
+.feedback form label::after{
+
+    content: "*";
+    color: red;
+    padding-left: 5px;
+
+}
+
+.feedback form .area{
+    box-sizing: border-box;
+    width: 405px;
+    border: white solid 1px;
+    color:#344e78;
+    padding-left: 10px;
+    font-style: italic;
+}
+
+.feedback form input.area{
+    background-image: url("videopage/Layer 18.jpg");
+    height: 33px;
+}
+.feedback form textarea{
+    height: 123px;
+    resize: none;
+    background-image: url("videopage/Layer 18 copy 2.jpg");
+    padding: 10px;
+}
+
+.btn{
+    float: right;
+    margin-top:6px ;
+    margin-right: 50px;
+    width: 82px;
+    color: #9c4e57;
+    font-size: 11px;
+    font-style: italic;
+    text-transform: uppercase;
+    height: 27px;
+    border: #9c4e57 solid 1px;
+}
+
+.btn:hover{
+    background-color: #9c4e57;
+    color: white;
+}
+
+.btn:active{
+    box-shadow: 2px -2px 5px rgba(0, 0, 0, 0.8);
+    background-color: #9c4e57;
+    color: white;
+}
+.clear{
+    clear: both;
+}

@@ -1,0 +1,456 @@
+.container{
+    width: 1280px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    color: #333333;
+}
+.clear{
+    clear: both;
+}
+h1{
+    margin-top: 0;
+    color: #ffffff;
+    font-size: 60px;
+    text-align: left;
+    font-weight: 400;
+    line-height: 0.75;
+}
+
+h2{
+    margin: 0 0 30px;
+    color: #445161;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 0.75;
+    text-align: center;
+}
+
+header,
+.about,
+.pluses,
+.scrinshots,
+.reviews,
+.buy_order,
+.contacts{
+    box-sizing: border-box;
+    padding: 50px;
+}
+
+header {
+
+    background-color:#445162 ;
+    background-image: url("image/back.jpg");
+    background-size: contain;
+    background-blend-mode: luminosity;
+    min-height: 323px;
+    padding-bottom: 30px;
+}
+
+header img{
+    float: right;
+    width: 469px;
+    height: 214px;
+    filter: blur(5px);
+}
+header img:hover{
+    filter: none;
+}
+header ul{
+    list-style-image: url("image/check icon.png");
+}
+
+header ul li{
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.about{
+    height: 345px;
+}
+/*
+.about img{
+    float: right;
+    width: 430px;
+    height: 245px;
+
+}*/
+.about video{
+    float: right;
+    /*width & height in the index.html*/
+}
+
+.about h2{
+    text-align: left;
+}
+
+.about p{
+    width: 670px;
+    line-height: 25px;
+    margin:0 0 10px 0;
+}
+
+.pluses{
+    background-color: #f5f5f5;
+    padding-bottom: 24px; /*50 -26 */
+}
+
+.pluses ul{
+    display: inline-block;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    width: 590px;
+}
+
+.pluses ul li{
+    background: url("image/plusicon.png") no-repeat 0 5px;
+    line-height: 24px;
+    padding-left: 40px;
+    margin-bottom: 26px;
+}
+
+.scrinshots{
+    padding-bottom: 25px;
+}
+.scrinshots .scrinshot{
+    display: inline-block;
+    width: 575px;
+    margin:  0 10px 25px 0;
+
+}
+
+.scrinshot img{
+    float: left;
+    margin-right: 15px;
+    width: 200px;
+    height: 150px;
+}
+
+.scrinshot h3{
+    color: #445161;
+    font-size: 24px;
+    line-height: 0.75;
+    margin: 0 0 15px;
+
+}
+
+.scrinshot p{
+    line-height: 24px;
+    margin-bottom: 0;
+
+}
+.reviews{
+    background-color: #f5f5f5;
+    padding-bottom: 35px ;
+
+}
+
+.comment,
+.foto,
+.citate{
+    display: inline-block;
+}
+
+.comment{
+    margin: 6px 0 15px;
+    position: relative;
+}
+
+.reviews .comment:nth-child(even){
+    margin-right: 20px;
+}
+.foto{
+    width: 75px;
+    margin-right: 15px ;
+}
+.foto img {
+    position: absolute;
+    top: 0;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.citate{
+    width: 483px;
+    background: url("image/bg review.png") no-repeat;
+}
+.citate blockquote{
+    width: 460px;
+    margin-left: 25px;
+    margin-right: 0;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 18px;
+}
+.citate blockquote p{
+    margin-bottom: 5px;
+}
+.citate cite{
+    color: #989898;
+    font-size: 14px;
+}
+.buy_order{
+    text-align: center;
+}
+.version_product{
+    display: inline-block;
+    width: 300px;
+    border-radius: 5px;
+    background-color: #445162;
+}
+
+.version_product h3{
+    color: white;
+    font-size: 24px;
+    margin: 15px 0;
+}
+.price{
+    position: relative;
+    width: 298px;
+    margin: auto;
+    height: 71px;
+    background-color: white;
+}
+.price span{
+    color: #445162;
+    font-size: 40px;
+    line-height: 30px;
+    display: block;
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.version_product ol{
+    padding-left: 35px ;
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+}
+
+.center{
+    margin: 0 45px;
+}
+
+.version_product a{
+    position: relative;
+    display: inline-block;
+    width: 260px;
+    height: 40px;
+    color: #445161;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    text-decoration: none;
+
+}
+
+.version_product a:hover{
+    color: white;
+    background-color: #989898;
+}
+.version_product a:active{
+    box-shadow: white 2px 2px 5px 5px;
+}
+
+.version_product a span{
+    display: block;
+    width: 200px;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.version_product a:visited{
+    color: #445161;
+}
+
+.contacts{
+    background-color: #445161;
+}
+
+
+.contacts h2{
+    color: white;
+
+}
+
+.feedback{
+    display: inline-block;
+    width: 500px;
+    margin-left: 200px;
+
+}
+
+.feedback label{
+    position: relative;
+
+}
+.feedback span{
+
+    position: absolute;
+    font-size: 10px;
+    opacity: 0;
+}
+
+.textinput{
+    box-sizing: border-box;
+    padding-left: 10px;
+    display: inline-block;
+    width: 500px;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+textarea.textinput{
+    height: 170px;
+    padding-top: 10px;
+}
+.btn{
+    display: block;
+    width: 140px;
+    height: 40px;
+    margin: auto;
+    border-radius: 5px;
+    background-color: white;
+    color: #445161;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.btn:hover {
+    background-color: #989898;
+}
+
+.social {
+
+    margin-left: 45px;
+    display: inline-block;
+    width:250px ;
+    vertical-align: top;
+
+}
+.our_contacts a{
+    display: block;
+    height: 30px;
+    font-weight: 400;
+    line-height: 24px;
+    color: white;
+    text-decoration: none;
+    padding-left: 30px;
+    margin-bottom: 15px;
+}
+.our_contacts a:hover{
+    color: #E8820C;
+}
+
+.our_contacts a:active{
+    text-shadow:  -2px -2px 3px orangered;
+}
+.skype{
+    background: url("image/skype icon.png") no-repeat 0 2px;
+
+}
+
+.icq{
+    background: url("image/icq icon.png") no-repeat 0 2px;
+
+}
+
+.mail{
+    background: url("image/email icon.png") no-repeat 0 2px;
+
+}
+
+.tel{
+    background: url("image/phone icon.png") no-repeat 0 2px;
+
+}
+.social_networks{
+    margin-top: 20px;
+    width: 350px;
+    height: 42px;
+    text-align: center;
+}
+
+.social_networks a{
+    display: inline-block;
+    width: 44px;
+    height: 42px;
+    margin-right: 10px;
+}
+.social_networks .icon{
+    width: 42px;
+    height: 42px;
+    fill: white;
+
+}
+.social_networks .youtube{
+    width: 84px;
+}
+.social_networks a:hover .icon{
+    fill: orange;
+}
+
+.social_networks a:active .icon{
+   box-shadow: orangered 2px 2px 5px 5px;
+}
+/*
+.twiter{
+    background: url("image/social-buttons.png");
+}
+.twiter:hover{
+    background: url("image/social-buttons.png") 0 -42px;
+}
+
+.facebook{
+    background: url("image/social-buttons.png") -49px 0;
+}
+
+.facebook:hover{
+    background: url("image/social-buttons.png") -49px -42px;
+}
+.linked{
+    background: url("image/social-buttons.png") -98px 0;
+}
+.linked:hover{
+    background: url("image/social-buttons.png") -98px -42px;
+}
+.google{
+    background: url("image/social-buttons.png") -147px 0;
+}
+.google:hover{
+    background: url("image/social-buttons.png") -147px -42px;
+}
+.youtube{
+    background: url("image/social-buttons.png") -196px 0;
+}
+
+.youtube:hover{
+    background: url("image/social-buttons.png") -196px -42px;
+}
+*/
+footer {
+    background-color: #f5f5f5;
+    text-align: center;
+    color: #445162;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    line-height: 24px;
+}
+footer p{margin: 0}

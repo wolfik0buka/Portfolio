@@ -1,0 +1,24 @@
+@import "../../sass/vars";
+
+.Post{
+  h1{
+    color: $decoration;
+  }
+  .info-post{
+    font-size: 0.9em;
+    span{
+      color: $text-color;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+  .main-image{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .post-paragraph{
+    margin: 20px auto;
+  }
+}

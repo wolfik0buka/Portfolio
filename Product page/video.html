@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <link rel="stylesheet" href="video.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+           <video  loop autoplay muted class="background">
+            <source src="videopage/background.mp4" type="video/mp4">
+            <source src="videopage/background.ogv" type="video/ogg">
+            <source src="videopage/background.webm" type="video/webm">
+           </video>
+    <div class="feedback">
+        <div class="adress">
+            <h4>Адрес</h4>
+            <p>г. Париж</p>
+            <p>Челябинская обл.</p>
+            <p>пр. Монмартр 21-1</p>
+            <p>Василий Пупкин</p>
+        </div>
+        <form action="#" method="post" name="message">
+            <h4>Отправка сообщения</h4>
+            <label for="name" class="required">Ваше имя</label>
+            <input type="text" name="name" id="name" class="area" required>
+            <label for="email" class="required">Ваш E-Mail</label>
+            <input type="email" name="mail" id="email" class="area"
+                   pattern="(.+)@(.+)\.([a-zA-Zа-яА-Я]{2,})" required>
+            <label for="out-message" class="required">Ваше сообщение</label>
+            <textarea name="message" id="out-message" required class="area"></textarea>
+            <input type="submit" value="отправить" class="btn">
+            <div class="clear"></div>
+        </form>
+    </div>
+</body>
+</html>
